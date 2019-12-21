@@ -236,10 +236,12 @@ namespace AutoLogin
                 if(text== ">> state: Disconnected")
                 {
                     ServerTextBox.BackColor = Color.LightCoral;
+                    Icon = notifyIcon.Icon = Resource.RedIcon;
                 }
                 else if(text==">> state: Connected")
                 {
                     ServerTextBox.BackColor = Color.LightGreen;
+                    Icon = notifyIcon.Icon = Resource.GreenIcon;
                 }
                 else if (text.StartsWith(">> error:"))
                 {
